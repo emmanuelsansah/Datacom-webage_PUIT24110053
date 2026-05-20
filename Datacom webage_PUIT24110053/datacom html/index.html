@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Communication Assignment | Emmanuel Sansah</title>
+    <meta name="description" content="A responsive data communication webpage by Emmanuel Sansah covering telegraphy, communication basics, satellite systems, assignment insights, and embedded learning resources.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style%20css/styles.css">
+    <style>
+        .card-icon {
+            margin-bottom: 0.75rem;
+            opacity: 0.86;
+            color: var(--accent-color, #6ab5ff);
+        }
+
+        .btn-icon {
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .scroll-hint {
+            margin-top: 3rem;
+            opacity: 0.6;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-orb orb-left"></div>
+    <div class="background-orb orb-right"></div>
+
+    <header class="site-header">
+        <a class="brand" href="#top">
+            <span class="brand-main">Data Communication</span>
+            <span class="brand-sub">Assignment</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+            <a href="#overview">Home</a>
+            <a href="#assignment">Assignment</a>
+            <a href="#concepts">Concepts</a>
+            <a href="#telegraph">Telegraph</a>
+            <a href="#satellite">Satellites</a>
+            <a href="#resources">Resources</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero section" id="overview">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">Pentecost University | Data Communication</p>
+                <h1>From Telegraph Pulses to Intelligent Satellite Networks</h1>
+                <p class="lead">
+                    This webpage presents my Data Communication assignment in a more interactive and professional format, combining topic summaries, an embedded telegraph video, assignment highlights, and selected figures that support the discussion.
+                </p>
+
+                <div class="identity-grid">
+                    <article class="identity-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        <span class="card-label">Name</span>
+                        <strong>Emmanuel Sansah</strong>
+                    </article>
+                    <article class="identity-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="7" y1="8" x2="17" y2="8"></line><line x1="7" y1="12" x2="17" y2="12"></line><line x1="7" y1="16" x2="13" y2="16"></line></svg>
+                        <span class="card-label">Student ID</span>
+                        <strong>PUIT/24110053</strong>
+                    </article>
+                    <article class="identity-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        <span class="card-label">Programme</span>
+                        <strong>Information Technology</strong>
+                    </article>
+                </div>
+
+                <div class="hero-note">
+                    The goal of this presentation is to show strong understanding, clean organization, and clear visual communication, so the main ideas stay easy to follow from start to finish.
+                </div>
+
+                <div class="hero-actions">
+                    <a class="button primary" href="#assignment">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>                        Open Assignment on This Page
+                    </a>
+                    <button class="button secondary video-trigger" type="button" data-video-id="7e522NK7gcM" data-scroll-target="#telegraph-video">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Watch Telegraph Video Here
+          </button>
+                </div>
+
+                <p class="hero-support">
+                    The assignment preview, telegraph video, and topic figures are all available inside this same website.
+                </p>
+
+                <div class="scroll-hint">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"></path></svg>
+                </div>
+            </div>
+
+            <aside class="profile-panel reveal">
+                <div class="portrait-stack">
+                    <div class="portrait-main">
+                        <div class="portrait-name">EMMANUEL SANSAH</div>
+                        <img src="../images/EK-green.png" alt="Portrait of Emmanuel Sansah" width="400" height="500" loading="lazy">
+                    </div>
+                    <div class="portrait-accent">
+                        <img src="../images/EK.png" alt="Portrait detail of Emmanuel Sansah" width="200" height="250" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <p class="eyebrow">Research Focus</p>
+                    <h2>Applying communication technology to real connectivity challenges</h2>
+                    <p>
+                        I am Emmanuel Sansah, an Information Technology student with a growing interest in data communication, network systems, and the role of satellite technology in expanding access to underserved communities in Ghana.
+                    </p>
+                    <ul class="bio-points">
+                        <li>Strong interest in signal flow, network infrastructure, and transmission systems</li>
+                        <li>Focused on how satellite communication can reduce the digital divide</li>
+                        <li>Interested in both historic communication methods and future intelligent networks</li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+
+        <section class="section" id="assignment">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Assignment Preview</p>
+                <h2>A structured on-page view of the submitted work</h2>
+                <p>
+                    Instead of only linking the document, this section brings the main assignment content directly into the website so the reader can quickly understand the scope, direction, and key conclusions of the paper.
+                </p>
+            </div>
+
+            <div class="assignment-shell">
+                <article class="assignment-overview reveal">
+                    <div class="assignment-meta">
+                        <span class="meta-chip">Course: Data Communication</span>
+                        <span class="meta-chip">Lecturer: Harry Atieku Boateng</span>
+                        <span class="meta-chip">Format: APA 7 with Mendeley</span>
+                    </div>
+
+                    <h3>What the assignment covers</h3>
+                    <p>
+                        The paper focuses on the principles and applications of satellite communication, especially how modern satellite systems support internet access, wide-area coverage, real-time communication, and improved connectivity in places where ground infrastructure is limited.
+                    </p>
+
+                    <ul class="assignment-points">
+                        <li>Explains orbital mechanics, signal transmission, and frequency spectrum management</li>
+                        <li>Discusses satellite zooming through High-Throughput Satellites and spot beam technology</li>
+                        <li>Compares satellite systems with terrestrial communication networks</li>
+                        <li>Examines challenges such as latency, weather effects, debris, and cybersecurity</li>
+                        <li>Explores future integration with 5G, 6G, and AI-driven network management</li>
+                    </ul>
+
+                    <div class="assignment-links">
+                        <a class="button primary" href="#assignment-reader">Read Key Sections</a>
+                        <a class="button secondary" href="../final_work_complete.docx" target="_blank" rel="noopener">Open Word Copy</a>
+                    </div>
+                </article>
+
+                <div class="assignment-reader reveal" id="assignment-reader">
+                    <article class="assignment-preview-block">
+                        <span class="resource-tag">Abstract</span>
+                        <h3>Why this topic matters</h3>
+                        <p>
+                            The assignment shows that satellite communication is no longer only a theory topic. It now supports internet access, global navigation, broadcasting, and real-time communication, especially in places where terrestrial infrastructure is expensive or unavailable.
+                        </p>
+                    </article>
+
+                    <article class="assignment-preview-block">
+                        <span class="resource-tag">Scope</span>
+                        <h3>How the paper is organized</h3>
+                        <p>
+                            The discussion connects orbital mechanics, frequency bands, signal coding, environmental effects, and system performance instead of treating them as separate ideas. It also highlights satellite zooming, showing how focused beams improve efficiency and capacity in high-demand areas.
+                        </p>
+                    </article>
+
+                    <article class="assignment-preview-block">
+                        <span class="resource-tag">Conclusion</span>
+                        <h3>Main message from the paper</h3>
+                        <p>
+                            The final argument is that modern satellite systems, especially HTS and LEO networks, can help close Ghana’s digital divide by reaching communities that terrestrial networks cannot economically serve, while future integration with AI and 6G will make these systems even more adaptive.
+                        </p>
+                    </article>
+
+                    <div class="chapter-map">
+                        <article class="chapter-card">
+                            <span class="chapter-number">01</span>
+                            <h3>Evolution and role</h3>
+                            <p>How satellite communication became part of modern global infrastructure.</p>
+                        </article>
+                        <article class="chapter-card">
+                            <span class="chapter-number">02</span>
+                            <h3>Technical principles</h3>
+                            <p>Orbital mechanics, spectrum choice, modulation, and signal coding.</p>
+                        </article>
+                        <article class="chapter-card">
+                            <span class="chapter-number">03</span>
+                            <h3>Satellite zooming</h3>
+                            <p>HTS, spot beams, and frequency reuse for higher throughput.</p>
+                        </article>
+                        <article class="chapter-card">
+                            <span class="chapter-number">04</span>
+                            <h3>System comparison</h3>
+                            <p>Satellite versus terrestrial communication in coverage, latency, and cost.</p>
+                        </article>
+                        <article class="chapter-card">
+                            <span class="chapter-number">05</span>
+                            <h3>Current challenges</h3>
+                            <p>Rain fade, delay, orbital debris, and cybersecurity vulnerabilities.</p>
+                        </article>
+                        <article class="chapter-card">
+                            <span class="chapter-number">06</span>
+                            <h3>Future direction</h3>
+                            <p>6G integration, autonomous operations, and AI-assisted resource management.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="concepts">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Core Concepts</p>
+                <h2>The building blocks of data communication</h2>
+                <p>
+                    Data communication is the exchange of information between devices through a transmission medium. Effective communication depends on the sender, the message, the path used, the receiver, and the rules that govern how the message is handled.
+                </p>
+            </div>
+
+            <div class="card-grid">
+                <article class="info-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    <h3>Communication Model</h3>
+                    <p>
+                        Every system needs a source, an encoder, a transmission medium, a receiver, and clear protocols. Accuracy, timing, and delivery all matter when information moves from one point to another.
+                    </p>
+                </article>
+
+                <article class="info-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+                    <h3>Transmission Media</h3>
+                    <p>
+                        Messages can travel through copper cables, fiber optics, radio waves, or satellite links. Each medium has different strengths in speed, reach, cost, and reliability.
+                    </p>
+                </article>
+
+                <article class="info-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <h3>Performance and Reliability</h3>
+                    <p>
+                        Good networks balance bandwidth, latency, security, and error control. The goal is not only to send data, but to send it clearly, quickly, and with minimal loss.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section telegraph-section" id="telegraph">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Historic Breakthrough</p>
+                <h2>The telegraph introduced the power of encoded digital messaging</h2>
+                <p>
+                    The telegraph changed communication by turning language into electrical signals that could travel long distances. Morse code made it possible to represent messages as dots and dashes, laying an early foundation for modern digital communication.
+                </p>
+            </div>
+
+            <div class="telegraph-layout">
+                <article class="telegraph-card reveal">
+                    <div class="diagram-shell" aria-label="Telegraph communication diagram">
+                        <div class="terminal sender-terminal">
+                            <span class="terminal-title">Sender</span>
+                            <div class="telegraph-key">
+                                <span class="key-bar"></span>
+                                <span class="key-base"></span>
+                            </div>
+                        </div>
+
+                        <div class="signal-line">
+                            <span class="pulse pulse-one"></span>
+                            <span class="pulse pulse-two"></span>
+                            <span class="pulse pulse-three"></span>
+                        </div>
+
+                        <div class="terminal receiver-terminal">
+                            <span class="terminal-title">Receiver</span>
+                            <div class="sounder">
+                                <span class="sounder-arm"></span>
+                                <span class="sounder-base"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="morse-chip-row" aria-label="Example Morse code">
+                        <span class="morse-chip">.-</span>
+                        <span class="morse-chip">-...</span>
+                        <span class="morse-chip">-.-.</span>
+                        <span class="morse-chip">..</span>
+                        <span class="morse-chip">---</span>
+                    </div>
+
+                    <figure class="topic-figure telegraph-figure">
+                        <img src="../images/telegraph-key.jpg" alt="Historic telegraph key used for coded electrical communication" width="900" height="675" loading="lazy">
+                        <figcaption>
+                            A telegraph key is the physical device operators used to send coded electrical pulses across distance.
+                            <span class="figure-credit">Historic image reference added from Wikimedia Commons.</span>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="telegraph-card reveal">
+                    <h3>Why the telegraph still matters</h3>
+                    <ul class="feature-list">
+                        <li>It converted messages into coded signals that could be transmitted electrically.</li>
+                        <li>It proved that distance could be reduced through communication technology.</li>
+                        <li>It introduced the idea of signal encoding, transmission, and decoding.</li>
+                        <li>It became an important step toward telephony, networking, and modern internet systems.</li>
+                    </ul>
+
+                    <div class="video-panel" id="telegraph-video">
+                        <div class="video-copy">
+                            <p class="eyebrow">Embedded Video</p>
+                            <h3>Watch the telegraph explanation without leaving the website</h3>
+                            <p>
+                                The video is embedded directly into this page, so the presentation stays inside the same website while still giving visual explanation for the topic.
+                            </p>
+                            <div class="inline-link-set">
+                                <button class="button primary video-trigger" type="button" data-video-id="7e522NK7gcM" data-scroll-target="#telegraph-video">
+                Play Telegraph Video
+              </button>
+                                <a class="button secondary" href="#resources">Go to Resources</a>
+                            </div>
+                        </div>
+
+                        <div class="video-frame" id="video-box">
+                            <iframe id="video-player" title="Telegraph video player" src="https://www.youtube.com/embed/7e522NK7gcM?rel=0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="satellite">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Modern Networks</p>
+                <h2>Satellite communication expands data access beyond ground limits</h2>
+                <p>
+                    My recent assignment explored satellite communication as a major part of modern global data infrastructure. It shows how wide-area coverage, intelligent beam control, and integration with future networks can improve communication where ground systems alone are not enough.
+                </p>
+            </div>
+
+            <div class="satellite-showcase" id="satellite-gallery">
+                <figure class="gallery-feature reveal">
+                    <img src="../images/assignment-figure-4.jpg" alt="Modern satellite hardware during assembly in a clean facility" width="1024" height="683" loading="lazy">
+                    <figcaption>Modern satellite platforms combine advanced power systems, sensing components, and communication payloads.</figcaption>
+                </figure>
+
+                <div class="gallery-stack">
+                    <figure class="figure-card reveal">
+                        <img src="../images/assignment-figure-2.png" alt="Historic rocket launch representing the start of space communication systems" width="489" height="367" loading="lazy">
+                        <figcaption>Launch systems opened the path for orbit-based communication and global coverage.</figcaption>
+                    </figure>
+                    <figure class="figure-card reveal">
+                        <img src="../images/assignment-figure-3.png" alt="Infrared satellite weather image used for large-scale observation" width="450" height="338" loading="lazy">
+                        <figcaption>Satellite imaging supports observation, weather intelligence, and long-range data services.</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="card-grid">
+                <article class="info-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                    <h3>Orbital Systems</h3>
+                    <p>
+                        LEO, MEO, and GEO satellites each offer different trade-offs in coverage, speed, and latency. The higher the orbit, the wider the coverage, but usually the longer the delay.
+                    </p>
+                </article>
+
+                <article class="info-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                    <h3>High-Throughput Satellites</h3>
+                    <p>
+                        Spot beams and frequency reuse make modern satellites more efficient. They focus signal power in specific areas, which increases capacity and improves service quality.
+                    </p>
+                </article>
+
+                <article class="info-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    <h3>Future Direction</h3>
+                    <p>
+                        Satellite systems are becoming part of 5G and 6G environments. With AI-assisted resource management, they can respond more intelligently to demand, weather, and network conditions.
+                    </p>
+                </article>
+            </div>
+
+            <div class="orbit-strip reveal">
+                <article class="orbit-card">
+                    <span class="orbit-label">LEO</span>
+                    <h3>Fast and low latency</h3>
+                    <p>Usually 500 km to 2,000 km above Earth, with latency often around 20 to 40 ms for broadband-style services.</p>
+                </article>
+                <article class="orbit-card">
+                    <span class="orbit-label">MEO</span>
+                    <h3>Balanced coverage</h3>
+                    <p>Often 8,000 km to 20,000 km, making it useful for navigation systems and moderate-latency communication services.</p>
+                </article>
+                <article class="orbit-card">
+                    <span class="orbit-label">GEO</span>
+                    <h3>Wide-area reach</h3>
+                    <p>At about 35,786 km, GEO supports major coverage footprints, but with much higher propagation delay.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section inspiration-section" id="inspiration">
+            <div class="section-heading reveal">
+                <p class="eyebrow">What Inspires Me</p>
+                <h2>Using communication technology to close the gap</h2>
+            </div>
+
+            <div class="inspiration-block reveal">
+                <p class="inspiration-text">
+                    I am inspired by the idea that communication technology can connect people who would otherwise be left behind. From the telegraph to satellites, every major advance shows how innovation can reduce distance, increase opportunity, and support learning, business, and development across Ghana and beyond.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="resources">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Resources</p>
+                <h2>Useful links and internal sections connected to this assignment</h2>
+                <p>
+                    These options help the reader stay inside the website for the main experience while still keeping important external links available when needed.
+                </p>
+            </div>
+
+            <div class="resource-grid">
+                <article class="resource-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <span class="resource-tag">On-page</span>
+                    <h3>Assignment Preview</h3>
+                    <p>Read the structured assignment summary inside this webpage, then open the original Word file only if the full document is needed.</p>
+                    <a class="text-link" href="#assignment-reader">Read assignment on page</a>
+                    <a class="text-link alt-link" href="../final_work_complete.docx" target="_blank" rel="noopener">Open Word copy</a>
+                </article>
+
+                <article class="resource-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                    <span class="resource-tag">External</span>
+                    <h3>Turnitin Platform</h3>
+                    <p>
+                        This opens the official Turnitin login page. A private submission becomes available after signing in with the correct student account.
+                    </p>
+                    <a class="text-link" href="https://www.turnitin.com/login_page.asp?lang=en_us" target="_blank" rel="noopener">Open Turnitin</a>
+                </article>
+
+                <article class="resource-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                    <span class="resource-tag">Embedded</span>
+                    <h3>Telegraph Video</h3>
+                    <p>
+                        The video is already embedded above, so this link takes the reader back to the on-page player instead of moving them away from the presentation.
+                    </p>
+                    <a class="text-link" href="#telegraph-video">Open video on page</a>
+                    <a class="text-link alt-link" href="https://www.youtube.com/watch?v=7e522NK7gcM" target="_blank" rel="noopener">Open YouTube directly</a>
+                </article>
+
+                <article class="resource-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M3 5h18"></path><path d="M3 12h18"></path><path d="M3 19h18"></path></svg>
+                    <span class="resource-tag">Figures</span>
+                    <h3>Topic Images</h3>
+                    <p>
+                        View the telegraph photo and the satellite figures used to make the presentation look more complete, visual, and professional.
+                    </p>
+                    <a class="text-link" href="#satellite-gallery">View figure gallery</a>
+                </article>
+            </div>
+
+            <p class="source-note">
+                Satellite figures on this page were extracted from the assignment document, while the telegraph key image was added as a historical visual reference.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Prepared by Emmanuel Sansah for Data Communication.</p>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
